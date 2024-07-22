@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueberries</title>
+
+    <style>
+        body {
+            background: linear-gradient(#8aacff,#1e549f);
+            border: 0.5px solid #fff;
+            border-radius: 5px;
+            padding: 50px;
+            margin: 0 auto;
+            max-width: 70%;
+            line-height: 1.5;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: auto;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            font-size: 39px;
+            padding: 30px;
+            max-width: 70%;
+            
+        }
+        h2 {
+            font-size: 26px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            padding:20px;
+        }
+
+        img {
+            max-width: 300px;
+            max-height: 100%;
+        }
+
+        .text {
+            font-size: 18px;
+            padding-right: 20px;
+        }
+
+        ul {
+            font-size: 18px;
+            border-radius: auto;
+        }
+
+        .learn-more {
+            color: #8aacff
+            
+        }
+        
+        button {
+            border-radius: 45px;
+            margin: 0 auto;
+            display: block;
+            background-color: #8aacff;
+            border: 1px solid #8aacff;
+            font-size: 20px;
+            line-height: 20px;
+            padding: 16px 24px;
+            transition: all 250ms ease;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button:hover {
+            color: #fff;
+            background: #1e549f;
+            cursor: pointer;
+        }
+        footer {
+            color: rbg (255,255,255,0.5);
+            color:#8aacff
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1><strong>Blueberries🫐</strong></h1>
+    <h2>Whats so special about them?</h2>
+<hr>
+<hr>
+<div class="container">
+    <div class="image">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/282/original/images.jpg?1719951556"
+            alt="Blueberries" width="200" />
+    </div>
+    <div class="text">
+        <p> Blueberries make a great refreshing snack, whether it's alone or used as a topping to your favourite snacks. They can be used
+        for baking, added to yogurts and salads, and even drinks. Best part, they can be grown fresh from the comfort of your
+        own home!</p>
+    </div>
+</div>
+    
+    <ul>
+       <li> 
+         <p>Blueberries are one of the best natural sources of antioxidants.</p>
+       </li> 
+       <li> 
+         <p>Blueberries contain vitamins, minerals, and antioxidants that provide notable health benfits.</p>
+       </li>
+       <li> 
+         <p>One cup of blueberries provides 25% of the daily recommended value of vitamin C and about 80 calories.</p>
+       </li>
+    </ul>
+    
+<br />
+    <a href="https://www.webmd.com/diet/health-benefits-blueberries"
+        target="_blank" class="learn-more">
+        Learn more...
+    </a>
+<hr>
+<br /> 
+
+<button> Buy Blueberries🫐</button>
+
+<script>
+    function buyBlueberries() {
+        let h1 = document.querySelector("h1");
+        let h2 = document.querySelector("h2");
+
+        let age = prompt("How old are you?");
+        let city = prompt("Where do you live?");
+        let email = prompt("What's your email?");
+
+         if (age >= 18) {
+                    alert("Thanks! We'll be in touch via email!")
+                    h1.innerHTML = "Thank you!";
+                    h2.innerHTML = "Get ready for blueberries!🫐";
+
+                } else {
+                    h1.innerHTML = "Sorry...";
+                    h2.innerHTML = "You may not buy blueberries.";
+                }
+
+            }
+
+            let contactButton = document.querySelector("button");
+
+            contactButton.addEventListener("click", buyBlueberries);
+   
+</script>
+
+</body>
+<footer>Coded by Klaudia Faryna</footer>
+</html>
